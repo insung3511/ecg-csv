@@ -2,10 +2,3 @@ ahadb filter=lfs diff=lfs merge=lfs -text
 edb filter=lfs diff=lfs merge=lfs -text
 nstdb filter=lfs diff=lfs merge=lfs -text
 cudb filter=lfs diff=lfs merge=lfs -text
-rdsamp filter=lfs diff=lfs merge=lfs -text
-rdsamp.c filter=lfs diff=lfs merge=lfs -text
-record_converter.py filter=lfs diff=lfs merge=lfs -text
-LICENSE filter=lfs diff=lfs merge=lfs -text
-README.md filter=lfs diff=lfs merge=lfs -text
-rdann filter=lfs diff=lfs merge=lfs -text
-rdann.c filter=lfs diff=lfs merge=lfs -text
