@@ -51,7 +51,7 @@ print("[INFO]./rdsamp commending start")
 for i in range(len(pre_records)):
     print("[IWIP]\t\trdsamp Converting", pre_records[i])
     #commend = './rdsamp -r ' + PATH + file_list[i] + ' -f 0 -pd -c -v > ./' + RESULT_PATH + DB_LIST[FILE_NUM_FLAG] + '/' + file_list[i] + '.csv'
-    commend = './rdsamp -r ' + PATH + pre_records[i] + ' -H -f 0 -pS -c -v > ' + RESULT_PATH + DB_LIST[FILE_NUM_FLAG] + '/rdsamp_' + DB_LIST[FILE_NUM_FLAG] + pre_records[i] + '.csv'
+    commend = 'rdsamp -r ' + PATH + pre_records[i] + ' -H -f 0 -v -p > ' + RESULT_PATH + DB_LIST[FILE_NUM_FLAG] + '/rdsamp_' + DB_LIST[FILE_NUM_FLAG] + pre_records[i] + '.csv'
     os.system(commend)
 print("[RSLT]\t\t\t", os.listdir(RESULT_PATH + DB_LIST[FILE_NUM_FLAG]))
 
@@ -61,7 +61,7 @@ for i in range(len(pre_records)):
     print("[IWIP]\t\trdsamp Converting", pre_records[i])
     # ./rdann -r 1.0.0/0201 -a atr -v -e > 0201_rdann.csv
     #commend = './rdsamp -r ' + PATH + file_list[i] + ' -f 0 -pd -c -v > ./' + RESULT_PATH + DB_LIST[FILE_NUM_FLAG] + '/' + file_list[i] + '.csv'
-    commend = './rdann -a atr -r ' + PATH + pre_records[i] + ' -f 0 -e -v > ' + RESULT_PATH + DB_LIST[FILE_NUM_FLAG] + '/rdann_' + DB_LIST[FILE_NUM_FLAG] + pre_records[i] + '.csv'
+    commend = 'rdann -a atr -r ' + PATH + pre_records[i] + ' -f 0 -e -v > ' + RESULT_PATH + DB_LIST[FILE_NUM_FLAG] + '/rdann_' + DB_LIST[FILE_NUM_FLAG] + pre_records[i] + '.csv'
     os.system(commend)
 print("[RSLT]\t\t\t", os.listdir(RESULT_PATH + DB_LIST[FILE_NUM_FLAG]))
 
